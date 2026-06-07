@@ -1,0 +1,143 @@
+{
+  "name": "git-ai-studio-vscode",
+  "displayName": "Git AI Studio",
+  "description": "Local AI code attribution insights for VS Code, powered by the git-ai CLI. Dashboard, per-commit stats, people breakdown, AI notes, and per-line AI attribution in the editor.",
+  "version": "0.1.0",
+  "publisher": "bujueyunjian",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bujueyunjian/git-ai-studio-vscode"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Visualization",
+    "SCM Providers"
+  ],
+  "keywords": [
+    "git",
+    "ai",
+    "attribution",
+    "blame",
+    "git-ai"
+  ],
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "gitAiStudio.openPanel",
+        "title": "Open Panel",
+        "category": "Git AI"
+      },
+      {
+        "command": "gitAiStudio.toggleAttribution",
+        "title": "Blame (Toggle AI Attribution)",
+        "category": "Git AI"
+      },
+      {
+        "command": "gitAiStudio.fileAiSummary",
+        "title": "Stats (File AI Summary)",
+        "category": "Git AI"
+      },
+      {
+        "command": "gitAiStudio.viewFileAttribution",
+        "title": "Blame in Panel",
+        "category": "Git AI"
+      },
+      {
+        "command": "gitAiStudio.viewProjectMetrics",
+        "title": "Dashboard",
+        "category": "Git AI"
+      }
+    ],
+    "submenus": [
+      {
+        "id": "gitAiStudio.editorMenu",
+        "label": "Git AI"
+      },
+      {
+        "id": "gitAiStudio.explorerMenu",
+        "label": "Git AI"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "submenu": "gitAiStudio.editorMenu",
+          "group": "navigation@100"
+        }
+      ],
+      "editor/lineNumber/context": [
+        {
+          "command": "gitAiStudio.toggleAttribution",
+          "group": "gitai@1"
+        }
+      ],
+      "explorer/context": [
+        {
+          "submenu": "gitAiStudio.explorerMenu",
+          "group": "navigation@100"
+        }
+      ],
+      "gitAiStudio.editorMenu": [
+        {
+          "command": "gitAiStudio.toggleAttribution",
+          "group": "1_blame@1"
+        },
+        {
+          "command": "gitAiStudio.fileAiSummary",
+          "group": "1_blame@2"
+        },
+        {
+          "command": "gitAiStudio.viewFileAttribution",
+          "group": "2_panel@1"
+        },
+        {
+          "command": "gitAiStudio.viewProjectMetrics",
+          "group": "2_panel@2"
+        }
+      ],
+      "gitAiStudio.explorerMenu": [
+        {
+          "command": "gitAiStudio.viewFileAttribution",
+          "group": "1@1",
+          "when": "!explorerResourceIsFolder"
+        },
+        {
+          "command": "gitAiStudio.viewProjectMetrics",
+          "group": "1@2"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Git AI Studio",
+      "properties": {
+        "gitAiStudio.gitAiPath": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "Absolute path to the `git-ai` executable. Leave empty to resolve from PATH (plus common install dirs like `~/.local/bin`, `~/.cargo/bin`, `/opt/homebrew/bin`)."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "sync-webview": "node scripts/sync-webview.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "node esbuild.mjs",
+    "watch": "node esbuild.mjs --watch",
+    "smoke": "npm run build && node scripts/smoke.mjs",
+    "package": "npm run sync-webview && npm run typecheck && npm run build && vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.90.0",
+    "@vscode/vsce": "^3.3.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.8.0"
+  }
+}
