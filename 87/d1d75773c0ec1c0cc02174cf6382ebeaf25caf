@@ -1,0 +1,21 @@
+.github/workflows/build.yml
+  s_105736a7be6b1f::t_7d7e8a6dcf15ad 1-62
+.vscodeignore
+  s_105736a7be6b1f::t_89fd6b46741416 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "87d1d75773c0ec1c0cc02174cf6382ebeaf25caf",
+  "prompts": {},
+  "sessions": {
+    "s_105736a7be6b1f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4bdeb38d-8077-430c-a0e4-28921e79d0a0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "bujueyunjian <bbujueyunjian@gmail.com>"
+    }
+  }
+}
