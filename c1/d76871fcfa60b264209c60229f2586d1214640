@@ -1,0 +1,96 @@
+src/editor/statusBar.ts
+  s_105736a7be6b1f::t_88509a1531c059 1-73
+README.md
+  s_105736a7be6b1f::t_eefbb0066e071d 1-71
+.vscodeignore
+  s_105736a7be6b1f::t_a458f276f8907a 1-10
+.gitignore
+  s_105736a7be6b1f::t_c7a41f079b665b 1-4
+scripts/sync-webview.mjs
+  s_105736a7be6b1f::t_414ef9a425db21 1-36
+src/cli/gitCli.ts
+  s_105736a7be6b1f::t_082240b87bc5c6 1-67
+src/services/statsCache.ts
+  s_105736a7be6b1f::t_c86f04faa28e73 1-31
+src/webview/panelHost.ts
+  s_105736a7be6b1f::t_11c071b6fc2f9d 1-182
+src/bridge/protocol.ts
+  s_105736a7be6b1f::t_80f2ee0bab2af2 241,243
+  s_105736a7be6b1f::t_3a93f0c41e5bf1 1-121,123-240,242,244-264,276-280,290-342,346-365
+  s_105736a7be6b1f::t_a6c5a5d1695474 265-275,281-289
+  s_105736a7be6b1f::t_6a168cbedd018f 343-345
+src/editor/attribution.ts
+  s_105736a7be6b1f::t_0f013eb3eaf2e9 1-17,27,38-129
+  s_105736a7be6b1f::t_507d41afcaae2c 18-26,28-37
+src/services/repoService.ts
+  s_105736a7be6b1f::t_1e8c4a90e44c19 1-109
+src/agents/agentHookDetector.ts
+  s_105736a7be6b1f::t_57831fd1b6bbf1 1-42,63-68,70-126,128-171
+  s_105736a7be6b1f::t_4653da876a9c68 43-62,69
+  s_105736a7be6b1f::t_274f630ad10387 127
+tsconfig.json
+  s_105736a7be6b1f::t_41ae45b92ccc2b 1-19
+src/cli/gitAiCli.ts
+  s_105736a7be6b1f::t_242e4a53437e12 1-86
+src/editor/attributionGutter.ts
+  s_105736a7be6b1f::t_7f5e5e02a20f40 1-86,89-100,102-124
+  s_105736a7be6b1f::t_f2f9b78a0e62d6 87-88,101
+src/editor/gitAiActionSupport.ts
+  s_105736a7be6b1f::t_2e63db7b23dc5a 1-40
+src/extension.ts
+  s_105736a7be6b1f::t_2ddcb7edd7844c 120
+  s_105736a7be6b1f::t_f44ed4a49de42d 1-119,121-193
+src/cli/processRunner.ts
+  s_105736a7be6b1f::t_84858ff44f3837 100
+  s_105736a7be6b1f::t_24953d21fa4783 1-53,56-57,60-99,101-117
+  s_105736a7be6b1f::t_35ec0a76e94d8c 54-55,58-59
+src/cli/executableLocator.ts
+  s_105736a7be6b1f::t_1077f9f122a5e9 109
+  s_105736a7be6b1f::t_946bd076fdeb60 31-85
+  s_105736a7be6b1f::t_cd31961a6af7c3 1-30,86-108,110-123,125-128
+  s_105736a7be6b1f::t_c29fc9e86fe0ea 124
+package.json
+  s_105736a7be6b1f::t_be694cb8796c0e 1-143
+src/bridge/dispatcher.ts
+  s_105736a7be6b1f::t_f0e6968f5d06e9 353-356
+  s_105736a7be6b1f::t_cb6051e0301ed7 91-117
+  s_105736a7be6b1f::t_98cd2aa2109b42 1163
+  s_105736a7be6b1f::t_7374e6eb5c2141 1198-1203
+  s_105736a7be6b1f::t_a94b572006944b 1230-1273
+  s_105736a7be6b1f::t_24104274215311 15
+  s_105736a7be6b1f::t_07ef51eee35f56 408-417
+  s_105736a7be6b1f::t_75ee17e385c0d1 1071-1138
+  s_105736a7be6b1f::t_701c4ec77097cf 20
+  s_105736a7be6b1f::t_2ff1bac8ed17b8 579-580
+  s_105736a7be6b1f::t_aa35c5a9661dad 859
+  s_105736a7be6b1f::t_1250753dd54ba4 347-348
+  s_105736a7be6b1f::t_2defd8304c44d9 1034-1035
+  s_105736a7be6b1f::t_c474e86517eb0d 928-931
+  s_105736a7be6b1f::t_ae1c99eeba40fe 881-886
+scripts/devserver.mjs
+  s_105736a7be6b1f::t_9105f1b8e6b579 1-138
+scripts/smoke.mjs
+  s_105736a7be6b1f::t_006a52593f0325 1-288,330-369
+  s_105736a7be6b1f::t_bf80eb5cbc525b 289-329
+src/services/settings.ts
+  s_105736a7be6b1f::t_a3e24e1fc82dcb 1-98,104-133
+  s_105736a7be6b1f::t_e8aa72530f7003 99-103
+esbuild.mjs
+  s_105736a7be6b1f::t_039a73d87a945d 1-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "c1d76871fcfa60b264209c60229f2586d1214640",
+  "prompts": {},
+  "sessions": {
+    "s_105736a7be6b1f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4bdeb38d-8077-430c-a0e4-28921e79d0a0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "bujueyunjian <bbujueyunjian@gmail.com>"
+    }
+  }
+}
